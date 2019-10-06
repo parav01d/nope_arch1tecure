@@ -54,11 +54,11 @@ dereference(s).then((dereferencedSchemas) => {
         fileContent += `\`\`\`javascript\n${JSON.stringify(dereferencedSchemas.definitions[payload].properties, replacer, 2)}\n\nRequired: ${JSON.stringify(dereferencedSchemas.definitions[payload].required ? dereferencedSchemas.definitions[PayloadName].required : [])}\n\`\`\`\n`;
       }
       if (resource) {
-        fileContent += `#### [Response](api/${resource}.ts) \n`;
+        fileContent += `#### Response \n`;
         fileContent += `\`\`\`javascript\n${JSON.stringify({resource: dereferencedSchemas.definitions[resource].properties}, replacer, 2)} \n\`\`\`\n`;
       }
       if (resources) {
-        fileContent += `#### [Response](api/${resources}.ts) \n`;
+        fileContent += `#### Response \n`;
         fileContent += `\`\`\`javascript\n${JSON.stringify({resources: [dereferencedSchemas.definitions[resources].properties]}, replacer, 2)} \n\`\`\`\n`;
       }
     }

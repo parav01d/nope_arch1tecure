@@ -18,7 +18,7 @@
 
 Required: ["email","password"]
 ```
-#### [Response](api/User.ts) 
+#### Response 
 ```javascript
 {
   "resource": {
