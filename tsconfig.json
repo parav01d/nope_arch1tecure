@@ -1,0 +1,57 @@
+{
+    "compilerOptions": {
+        "noEmit": false,
+        "skipLibCheck": true,
+        "lib": ["es2015", "dom"],
+        "target": "es6",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "allowJs": true,
+        "sourceMap": true,
+        "typeRoots": [
+          "node_modules/@types"
+        ],
+        "baseUrl": ".",
+        "paths": {
+          "UserManagement/Controller/*": ["./api/Domain/UserManagement/Controller/*"],
+          "UserManagement/Controller": ["./api/Domain/UserManagement/Controller/index"],
+          "UserManagement/Hydration/*": ["./api/Domain/UserManagement/Hydration/*"],
+          "UserManagement/Hydration": ["./api/Domain/UserManagement/Hydration/index"],
+          "UserManagement/Listener/*": ["./api/Domain/UserManagement/Listener/*"],
+          "UserManagement/Listener": ["./api/Domain/UserManagement/Listener/index"],
+          "UserManagement/UseCase/*": ["./api/Domain/UserManagement/UseCase/*"],
+          "UserManagement/UseCase": ["./api/Domain/UserManagement/UseCase/index"],
+          "UserManagement/Routes": ["./api/Domain/UserManagement/Routes"],
+          "Config/*": ["./config/*"],
+          "Config": ["./config/index"],
+          "Model/*": ["./api/Model/*"],
+          "Model": ["./api/Model/index"],
+          "Definition/*": ["./api/Definition/*"],
+          "Definition": ["./api/Definition/index"],
+          "Repository/*": ["./api/Repository/*"],
+          "Repository": ["./api/Repository/index"],
+          "Service/*": ["./api/Service/*"],
+          "Service": ["./api/Service/index"],
+          "Framework/*": ["./framework/*"],
+          "Framework": ["./framework/index"],
+          "Translation/*": ["./translation/*"],
+          "Translation": ["./translation/index"],
+          "Test/*": ["./e2e/*"],
+          "Test": ["./e2e/index"]
+        },
+        "outDir": "dist"
+    },
+    "include": [
+        "api/**/*",
+        "e2e/**/*",
+        "translation/**/*",
+        "framework/**/*",
+        "migration/**/*"
+    ],
+    "exclude": [
+      "./node_modules",
+      "./dist"
+    ]
+}

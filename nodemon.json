@@ -1,0 +1,5 @@
+{
+  "watch": ["api", "framework", "e2e"],
+  "ext": "ts",
+  "exec": "ts-node -r tsconfig-paths/register -r dotenv/config ./api/index.ts"
+}
