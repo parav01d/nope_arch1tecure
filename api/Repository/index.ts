@@ -8,7 +8,6 @@ export * from "Repository/User/IUserRepository";
 export class RepositoryModule extends ContainerModule {
 
   static UserRepository = Symbol("UserRepository");
-  static UserScoreRepository = Symbol("UserScoreRepository");
 
   constructor() {
     super((bind: interfaces.Bind) => {

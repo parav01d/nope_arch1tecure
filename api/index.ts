@@ -26,7 +26,7 @@ function bootstrapExpress(): void {
         });
     });
 
-    app.get("*", (req, res) => {
+    app.use("*", (req, res) => {
       res.status(404).send({message: "Route not found!", route: req.originalUrl});
     });
 

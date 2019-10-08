@@ -5,7 +5,6 @@ import ITokenService from "Service/TokenService/ITokenService";
 export * from "Service/TokenService/ITokenService";
 
 class ServiceModule extends ContainerModule {
-    static ImageService = Symbol("ImageService");
     static TokenService = Symbol("TokenService");
 
     constructor() {

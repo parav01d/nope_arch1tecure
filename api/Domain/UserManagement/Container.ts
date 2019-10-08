@@ -1,5 +1,6 @@
 import "reflect-metadata";
 import { Container } from "inversify";
+
 import ServiceModule from "Service";
 import RepositoryModule from "Repository";
 
@@ -8,9 +9,11 @@ import AppUseCaseModule from "UserManagement/UseCase";
 import AppHydrationModule from "UserManagement/Hydration";
 
 const container = new Container();
+
 const serviceModule = new ServiceModule();
 const repositoryModule = new RepositoryModule();
 
+// AuthorizationModule
 const appControllerModule = new AppControllerModule();
 const appUseCaseModule = new AppUseCaseModule();
 const appHydrationModule = new AppHydrationModule();
