@@ -35,7 +35,7 @@
     "node-duration": "^1.0.4",
     "pg": "^7.11.0",
     "reflect-metadata": "^0.1.13",
-    "sharp": "^0.22.0",
+    "sharp": "^0.30.5",
     "tsconfig-paths": "^3.8.0"
   },
   "devDependencies": {
