@@ -22,7 +22,7 @@
   "dependencies": {
     "bcrypt": "^5.0.0",
     "body-parser": "^1.18.3",
-    "class-validator": "^0.9.1",
+    "class-validator": "^0.14.0",
     "cors": "^2.8.5",
     "eventbusjs": "^0.2.0",
     "express": "^4.16.4",
